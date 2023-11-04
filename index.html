@@ -30,13 +30,126 @@
   <!-- End Head -->
 
   <!-- Start Body  -->
-  <body>
-    <nav>
-      <span class="responsiveMobile">
-        <img src="Assets/Icon/hamburger menu.svg"
-        alt="Hamburger menu icon">
-      </span>
-      <h1>Test</h1>
+  <body class="block">
+    <div class="layerBG">
+      <nav>
+        <span onclick="openNav()" class="hamMenu">
+          <img src="Assets/Icon/hamburgermenu.png" alt="Hamburger menu icon" />
+        </span>
+        <span class="navIcon">
+          <img
+            src="https://img.icons8.com/stickers/100/paint-palette-with-brush.png"
+          />
+        </span>
+        <h1>Design Things.</h1>
+        <ul class="navMenu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact Us!</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </body>
   <!-- End Body -->
+
+  <!-- mobile menu -->
+  <div id="mobileSidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      >&times;</a
+    >
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact Us!</a>
+  </div>
+
+  <!-- end of mobile menu -->
+  <!-- header -->
+  <header>
+    <section class="headerSection">
+      <h1>Welcome to Design Things.</h1>
+    </section>
+  </header>
+  <!-- end of header -->
+
+  <main>
+    <!-- section 1 -->
+    <section id="sec1">
+      <h2>
+        What is an Art?<br />
+        or <br />
+        What is a Design?
+      </h2>
+      <ul>
+        <li>
+          Art<br />
+          <p>
+            An art piece refers to a specific creation within the realm of
+            visual, auditory, or performance-based forms of expression that is
+            typically appreciated for its aesthetic qualities, emotional impact,
+            or conceptual depth. Art can encompass a wide range of mediums,
+            including painting, sculpture, music, literature, dance, and more.
+            It often involves personal expression and can be open to
+            interpretation, inviting viewers to derive their own meaning from
+            the work.
+          </p>
+        </li>
+
+        <li>
+          Design<br />
+          <p>
+            A design, on the other hand, is a planned and intentional solution
+            to a specific problem or objective. It involves the process of
+            conceiving, planning, and often executing the creation of an object,
+            system, or experience with a particular function or purpose in mind.
+            Design can be found in various fields like graphic design,
+            industrial design, architecture, fashion design, user experience
+            (UX) design, and more. Designers aim to create solutions that are
+            both functional and visually appealing, often tailored to meet the
+            needs of a specific audience or context.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <!-- end of section 1 -->
+
+    <!-- grid image -->
+    <section id="gridImage">
+      <h1>Some of Greatest Artist.</h1>
+      <div class="gridParent">
+        <div class="grid1"></div>
+        <div class="grid2"></div>
+        <div class="grid3"></div>
+        <div class="grid4"></div>
+        <div class="grid5"></div>
+        <div class="grid6"></div>
+        <div class="grid7"></div>
+        <div class="grid8"></div>
+      </div>
+    </section>
+    <!-- end of grid image -->
+  </main>
+  <!-- Form -->
+  <form class="formDesign" action="#">
+    <div class="formContainer">
+      <h2>I Heard You Like Art? <br />Tell Us More About it!</h2>
+      <label for="fullName">Full Name :</label>
+      <input id="fullName" type="text" required />
+
+      <label for="DOB">Date of Birth :</label>
+      <input id="DOB" type="date" required />
+
+      <label for="colour">Favorite Colour:</label>
+      <input id="colour" type="color" required />
+
+      <button type="submit" class="submitbtn" onclick="showAlert()">
+        Submit
+      </button>
+    </div>
+  </form>
 </html>

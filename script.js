@@ -7,6 +7,5 @@ function closeNav() {
 }
 
 function showAlert() {
-    alert(
-      "Thank you for filling the form!"
-    );
+  alert("Thank you for filling the form!");
+}

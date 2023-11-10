@@ -228,7 +228,7 @@ header h1 {
 
 .grid1 {
   grid-area: 1 / 2 / 5 / 6;
-  background-color: red;
+  /* background-color: red; */
   /* background-image: url(Assets/Images/vangogh_grid_potrait.png); */
   background-repeat: no-repeat;
   background-position: center center;
@@ -237,16 +237,16 @@ header h1 {
 }
 .grid2 {
   grid-area: 5 / 2 / 10 / 6;
-  background-color: blue;
-  background-image: url(Assets/Images/Leonardo_self.jpg);
+  /* background-color: blue; */
+  /* background-image: url(Assets/Images/Leonardo_self.jpg); */
   background-position: center center;
   border-radius: 8%;
   box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
 }
 .grid3 {
   grid-area: 1 / 6 / 4 / 9;
-  background-color: magenta;
-  background-image: url(Assets/Images/AndyWarhol.jpg);
+  /* background-color: magenta; */
+  /* background-image: url(Assets/Images/AndyWarhol.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -256,8 +256,7 @@ header h1 {
 }
 .grid4 {
   grid-area: 4 / 6 / 8 / 9;
-
-  background-image: url(Assets/Images/Pablopicasso.jpg);
+  /* background-image: url(Assets/Images/Pablopicasso.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,27 +265,40 @@ header h1 {
 }
 .grid5 {
   grid-area: 8 / 6 / 10 / 12;
-  background-color: purple;
-  background-image: url(Assets/Images/HenriMatise.jpg);
+  /* background-color: purple; */
+  /* background-image: url(Assets/Images/HenriMatise.jpg); */
   background-position: 20% 15%;
+  background-repeat: no-repeat;
   height: auto;
   border-radius: 8%;
   box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  overflow: hidden;
 }
+
+.grid5 img {
+  object-position: 10% 25%;
+}
+
 .grid6 {
   grid-area: 5 / 9 / 8 / 14;
-  background-color: yellow;
-  background-image: url(Assets/Images/sherman-film-still-photo.webp);
+  /* background-color: yellow; */
+  /* background-image: url(Assets/Images/sherman-film-still-photo.webp); */
   background-position: 90% 0%;
   background-repeat: no-repeat;
   height: auto;
   border-radius: 8%;
   box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  overflow: hidden;
+}
+
+.grid6 img {
+  object-position: -350px 2%;
+  width: 174%;
 }
 .grid7 {
   grid-area: 8 / 12 / 10 / 14;
-  background-color: brown;
-  background-image: url(Assets/Images/Salvador_Dalí_1939.jpg);
+  /* background-color: brown; */
+  /* background-image: url(Assets/Images/Salvador_Dalí_1939.jpg); */
   background-position: center center;
   height: auto;
   border-radius: 8%;
@@ -294,8 +306,8 @@ header h1 {
 }
 .grid8 {
   grid-area: 1 / 9 / 5 / 14;
-  background-color: gray;
-  background-image: url(assets/images/Louise_Bourgeois.jpg);
+  /* background-color: gray; */
+  /* background-image: url(assets/images/Louise_Bourgeois.jpg); */
   background-position: center center;
   border-radius: 8%;
   box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
@@ -470,13 +482,17 @@ input {
   }
   .grid6 {
     grid-area: 13/ 2 / 25 / 14;
-    background-color: yellow;
+    /* background-color: yellow; */
     /* background-image: url(Assets/Images/sherman-film-still-photo.webp); */
     background-position: 90% 0%;
     background-repeat: no-repeat;
     height: auto;
     border-radius: 8%;
     box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  }
+  .grid6 img {
+    object-position: 99% 1%;
+    width: 100%;
   }
   .grid7 {
     grid-area: 30 / 2 / 35 / 9;

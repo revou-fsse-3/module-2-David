@@ -32,7 +32,7 @@
   <!-- Start Body  -->
   <body class="block">
     <div class="layerBG">
-      <nav>
+      <nav id="navbar" class="navbarDM">
         <span onclick="openNav()" class="hamMenu">
           <img src="Assets/Icon/hamburgermenu.png" alt="Hamburger menu icon" />
         </span>
@@ -47,10 +47,10 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#gridImage">Artists</a>
           </li>
           <li>
-            <a href="#">Contact Us!</a>
+            <a href="#formContactus">Contact Us!</a>
           </li>
         </ul>
       </nav>
@@ -98,6 +98,10 @@
             interpretation, inviting viewers to derive their own meaning from
             the work.
           </p>
+          <picture>
+            <source media="(min-width: 650px)" srcset="" />
+            <!-- input image in srcset and input another images for smaller screen-->
+          </picture>
         </li>
 
         <li>
@@ -122,20 +126,54 @@
     <section id="gridImage">
       <h1>Some of Greatest Artist.</h1>
       <div class="gridParent">
-        <div class="grid1"></div>
-        <div class="grid2"></div>
-        <div class="grid3"></div>
-        <div class="grid4"></div>
-        <div class="grid5"></div>
-        <div class="grid6"></div>
-        <div class="grid7"></div>
-        <div class="grid8"></div>
+        <div class="grid1">
+          <img
+            src="Assets/Images/vangogh_grid_potrait.png"
+            alt="Van Gogh Potrait"
+          />
+        </div>
+        <div class="grid2">
+          <img
+            src="Assets/Images/Leonardo_self.jpg"
+            alt="Leonardo Davinci Potrait"
+          />
+        </div>
+        <div class="grid3">
+          <img src="Assets/Images/AndyWarhol.jpg" alt="Andy Warhol Potrait" />
+        </div>
+        <div class="grid4">
+          <img
+            src="Assets/Images/Pablopicasso.jpg"
+            alt="Pablo Picasso Potrait"
+          />
+        </div>
+        <div class="grid5">
+          <img src="Assets/Images/HenriMatise.jpg" alt="Henri Matise Potrait" />
+        </div>
+        <div class="grid6">
+          <img
+            src="Assets/Images/sherman-film-still-photo.webp"
+            alt="Sherman Potrait"
+          />
+        </div>
+        <div class="grid7">
+          <img
+            src="Assets/Images/Salvador_Dalí_1939.jpg"
+            alt="Salvador Dali Potrait"
+          />
+        </div>
+        <div class="grid8">
+          <img
+            src="assets/images/Louise_Bourgeois.jpg"
+            alt="Louise Bourgeois Potrait"
+          />
+        </div>
       </div>
     </section>
     <!-- end of grid image -->
   </main>
   <!-- Form -->
-  <form class="formDesign" action="#">
+  <form id="formContactus" class="formDesign" action="#">
     <div class="formContainer">
       <h2>I Heard You Like Art? <br />Tell Us More About it!</h2>
       <label for="fullName">Full Name :</label>

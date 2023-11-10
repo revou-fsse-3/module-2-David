@@ -1,9 +1,19 @@
+@font-face {
+  font-family: Lexend Deca;
+  src: local (Lexend Deca),
+    url(Assets/Fonts/Lexend\ Deca/LexendDeca-ExtraLight.ttf),
+    url(Assets/Fonts/Lexend\ Deca/LexendDeca-Regular.ttf),
+    url(Assets/Fonts/Lexend\ Deca/LexendDeca-Bold.ttf);
+}
+
 * {
   font-family: Lexend Deca;
   margin: 0px;
 }
 
-/* buat demo filter pake handle slider buat editing di website */
+h1 h2 p {
+  color: #000000;
+}
 
 /* Body */
 
@@ -24,7 +34,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #3e454b;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
@@ -44,9 +54,9 @@
 /* end of body */
 
 /* navbar */
-nav {
+.navbarDM {
   position: fixed;
-  background-color: #78b2ff;
+  background-color: hsl(204 68% 55% / 1);
   width: 100%;
   display: flex;
   height: 80px;
@@ -111,7 +121,7 @@ nav ul li {
 
 /* header */
 header {
-  background-color: #5f84b6;
+  background-color: hsl(204 56% 47% / 1);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -167,6 +177,8 @@ header h1 {
   color: #fff;
   background-color: #3f6981;
   list-style-position: inside;
+  text-align: justify;
+  text-align-last: left;
   padding: 4%;
   border-radius: 20px;
   box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
@@ -184,6 +196,7 @@ header h1 {
   display: flex;
   flex-direction: row;
   margin: 0;
+  padding-inline-start: 0;
 }
 
 /* end of sec1 */
@@ -206,10 +219,17 @@ header h1 {
   height: 1040px;
 }
 
+.gridParent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8%;
+}
+
 .grid1 {
   grid-area: 1 / 2 / 5 / 6;
   background-color: red;
-  background-image: url(Assets/Images/vangogh_grid_potrait.png);
+  /* background-image: url(Assets/Images/vangogh_grid_potrait.png); */
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 8%;
@@ -315,6 +335,7 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 1;
+  border-radius: 30px;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -327,6 +348,21 @@ button {
   border-radius: 0px 0px 25px 25px;
 }
 /* end of  hover */
+
+/* Label */
+
+label {
+  margin: 5px;
+}
+input {
+  margin: 10px;
+}
+
+/* End of Label */
+
+/* Dark Mode */
+
+/*  End of Dark Mode */
 
 /* responsive */
 
@@ -373,6 +409,93 @@ button {
 
   #sec1 li {
     margin: 1% 2%;
+  }
+  .gridParent {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(34, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    height: 1040px;
+    margin-bottom: 33px;
+  }
+  .grid1 {
+    grid-area: 1 / 2 / 7 / 8;
+    background-color: red;
+    /* background-image: url(Assets/Images/vangogh_grid_potrait.png); */
+    background-repeat: no-repeat;
+    background-position: 10% 42%;
+    background-size: cover;
+    border-radius: 25%;
+    box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  }
+  .grid2 {
+    grid-area: 7 / 2 / 13 / 8;
+    background-color: blue;
+    /* background-image: url(Assets/Images/Leonardo_self.jpg); */
+    background-position: 5% 28%;
+    border-radius: 8%;
+    box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+    background-size: cover;
+  }
+  .grid3 {
+    grid-area: 1 / 8 / 13 / 14;
+    background-color: magenta;
+    /* background-image: url(Assets/Images/AndyWarhol.jpg); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    border-radius: 8%;
+    box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  }
+  .grid4 {
+    grid-area: 25 / 2 / 30 / 7;
+    /* background-image: url(Assets/Images/Pablopicasso.jpg); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8%;
+    box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  }
+  .grid5 {
+    grid-area: 25 / 7 / 30 / 14;
+    background-color: purple;
+    /* background-image: url(Assets/Images/HenriMatise.jpg); */
+    background-position: 20% 15%;
+    height: auto;
+    border-radius: 8%;
+    box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+    background-size: cover;
+  }
+  .grid6 {
+    grid-area: 13/ 2 / 25 / 14;
+    background-color: yellow;
+    /* background-image: url(Assets/Images/sherman-film-still-photo.webp); */
+    background-position: 90% 0%;
+    background-repeat: no-repeat;
+    height: auto;
+    border-radius: 8%;
+    box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  }
+  .grid7 {
+    grid-area: 30 / 2 / 35 / 9;
+    background-color: brown;
+    /* background-image: url(Assets/Images/Salvador_Dalí_1939.jpg); */
+    background-position: 78% 41%;
+    background-size: 150%;
+    height: auto;
+    border-radius: 8%;
+    box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  }
+  .grid8 {
+    grid-area: 30 / 9 / 35 / 14;
+    background-color: gray;
+    /* background-image: url(assets/images/Louise_Bourgeois.jpg); */
+    background-position: center center;
+    background-size: 150%;
+    border-radius: 8%;
+    box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
   }
 }
 

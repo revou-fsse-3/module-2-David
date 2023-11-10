@@ -2,4 +2,6 @@
 
 # Hi, Welcome to my page!
 
-Heres my website on netlify [Design Things.](https://revou-module-2-david.netlify.app)
+Heres my website on netlify [Design Things.](https://dropwatergames.site)
+
+### [How to apply custom domain in Netlify?](Documentation/How%20to%20apply%20custom%20domain%20in%20Netlify.md)

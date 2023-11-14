@@ -10,14 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Things.</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lexend+Deca:wght@200;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- End of Google Fonts -->
     <!-- Icon Title -->
     <link
       rel="icon"
@@ -32,7 +24,7 @@
   <!-- Start Body  -->
   <body class="block">
     <div class="layerBG">
-      <nav id="navbar" class="navbarDM">
+      <nav id="navbar">
         <span onclick="openNav()" class="hamMenu">
           <img src="Assets/Icon/hamburgermenu.png" alt="Hamburger menu icon" />
         </span>
@@ -41,7 +33,10 @@
             src="https://img.icons8.com/stickers/100/paint-palette-with-brush.png"
           />
         </span>
-        <h1>Design Things.</h1>
+        <h1 id="h1dm">Design Things.</h1>
+        <button id="toggle-btn" class="dark-mode-toggle">
+          Toggle dark mode
+        </button>
         <ul class="navMenu">
           <li>
             <a href="#">Home</a>

@@ -147,14 +147,14 @@
 
   <main>
     <!-- section 1 -->
-    <section id="sec1">
+    <section id="sec1" class="sect1">
       <h2>
         What is an Art?<br />
         or <br />
         What is a Design?
       </h2>
       <ul>
-        <li>
+        <li id="bgliSec1a" class="bglisc1">
           Art<br />
           <p>
             An art piece refers to a specific creation within the realm of
@@ -172,7 +172,7 @@
           </picture>
         </li>
 
-        <li>
+        <li id="bgliSec1b" class="bglisc1">
           Design<br />
           <p>
             A design, on the other hand, is a planned and intentional solution
@@ -283,10 +283,10 @@
       <input id="fullName" type="text" required />
 
       <label for="DOB">Date of Birth :</label>
-      <input id="DOB" type="date" required />
+      <input id="DOB" class="dateInput" type="date" required />
 
       <label for="colour">Favorite Colour:</label>
-      <input id="colour" type="color" required />
+      <input id="colour" class="clrPicker" type="color" required />
 
       <button id="buttonSbmt" type="submit" onclick="showAlert()">
         Submit

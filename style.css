@@ -158,11 +158,11 @@ header h1 {
 
 /* sec1 */
 
-#sec1 {
+.sect1 {
   margin: 5% 8% 0% 8%;
 }
 
-#sec1 h2 {
+.sect1 h2 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 5%;
@@ -170,7 +170,7 @@ header h1 {
   text-shadow: 3px 4px 2px #464e57;
 }
 
-#sec1 li {
+.bglisc1 {
   font-size: 2.4rem;
   margin: 5% 2%;
   font-weight: 800;
@@ -185,7 +185,7 @@ header h1 {
   box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
 }
 
-#sec1 li p {
+.sect1 li p {
   font-size: 1.4rem;
   letter-spacing: 0.01rem;
   margin-bottom: 2%;
@@ -193,7 +193,7 @@ header h1 {
   letter-spacing: 0.1rem;
 }
 
-#sec1 ul {
+.sect1 ul {
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -330,13 +330,15 @@ form div {
 }
 
 form {
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 form h2 {
   font-size: 2.5rem;
   color: #fff;
   text-align: center;
+  letter-spacing: 0.5vh;
+  margin-top: 2%;
   margin-bottom: 2%;
 }
 
@@ -351,6 +353,24 @@ button {
   border-radius: 30px;
   font-weight: 600;
   font-size: 2rem;
+}
+
+form input {
+  width: 30vh;
+  height: 3vh;
+}
+
+.clrPicker {
+  width: 15vh;
+  height: 5vh;
+}
+
+#buttonSbmt {
+  margin-top: 5vh;
+}
+
+.buttonForm {
+  background-color: hsl(216, 20%, 30%);
 }
 
 /* end of form */
@@ -499,6 +519,36 @@ nav input:checked + label svg.moonIcon {
 
 /* end of dark mode toggle button */
 
+.sec1DMa {
+  background-color: hsl(202, 21%, 27%);
+  box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  font-size: 2.4rem;
+  margin: 5% 2%;
+  font-weight: 800;
+  list-style-type: square;
+  color: #fff;
+  list-style-position: inside;
+  text-align: justify;
+  text-align-last: left;
+  padding: 4%;
+  border-radius: 20px;
+}
+
+.sec1DMb {
+  background-color: hsl(202, 21%, 27%);
+  box-shadow: 2px 2px 10px rgba(29, 46, 61, 0.685);
+  font-size: 2.4rem;
+  margin: 5% 2%;
+  font-weight: 800;
+  list-style-type: square;
+  color: #fff;
+  list-style-position: inside;
+  text-align: justify;
+  text-align-last: left;
+  padding: 4%;
+  border-radius: 20px;
+}
+
 /*  End of Dark Mode */
 
 /* Carousell */
@@ -614,11 +664,11 @@ nav input:checked + label svg.moonIcon {
     transition: 1s;
   }
 
-  #sec1 ul {
+  .sect1 ul {
     flex-direction: column;
   }
 
-  #sec1 li {
+  .sect1 li {
     margin: 1% 2%;
   }
   .gridParent {
